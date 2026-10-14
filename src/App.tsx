@@ -1,12 +1,10 @@
-import './App.css'
+import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
-
-  return (
-<div>
-  Good ol' new project
-</div>
-  )
+  return <>
+  <Navbar/>
+  </>;
 }
 
-export default App
+export default App;

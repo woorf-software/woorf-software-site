@@ -1,0 +1,21 @@
+import Button from "./UI/Button";
+import NavItem from "./UI/NavItem";
+
+export default function Navbar() {
+  return (
+    <nav class="h-16 dark:border-gray-700 w-full flex items-center">
+      <div class="ml-6 lg:ml-10">
+        <img src="woorf-logo.svg" alt="woorf software logo" class="h-10" />
+      </div>
+
+      {/* Right aligned items */}
+      <div class="ml-auto mr-38 flex items-center space-x-8">
+        <NavItem linkName="Home" linkURL="/" />
+        <NavItem linkName="About" linkURL="/about" />
+        <a href="" class="btn-outline">
+          Our software
+        </a>
+      </div>
+    </nav>
+  );
+}
